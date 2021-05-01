@@ -4,6 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>neshini</title>
@@ -25,17 +26,18 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Neshini</h1>
-								<p>A website created to showcase the python projects as a part of ISM final product for the year of 2020-2021. The site template used was designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<p>A website created to showcase the python projects as a part of ISM final product for the year of 2020-2021.</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#star">Star</a></li>
+								<li><a href="#luna">Luna</a></li>
+								<li><a href="#lulu">Lulu</a></li>
+								<li><a href="#moti">Moti</a></li>
+								<li><a href="#about">About Me</a></li>
+								<!--<li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -44,58 +46,171 @@
 					<div id="main">
 
 						<!-- Intro -->
+						<!-- *initial pic is any astronomy pic (Done)
+							   *update links (done)
+							   *maybe upload final pics onto repository-->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>This is a website to display my final product for ISM for the year of 2020-2021. It will include a link to all of my codes throught the website GitHub, description of each code and its output and ideas for future codes. Here is a link to my <a href="#work">work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<span class="image main"><img src="images/astro_intro.jpg" alt="" /></span>
+								<p>This is a website to display my final product for ISM for the year of 2020-2021. It will include a link to all of my codes throught the website <a href="https://github.com/neshini/ubiquitious-donovan">Github</a>, description of each code, its output and ideas for future codes. Here is the links to my four projects, <a href="#star">star.py</a>, <a href="#luna">luna.py</a>, <a href="#lulu">lulu.py</a>, and <a href="#moti">moti.py</a>. </p>
+								<p> <a target="_blank" href="https://github.com/neshini/ubiquitious-donovan" class="button"><b><font color="#7CB3B2">My Github</font></b></a></p>
+								<p> The main reason I created this website is to effectively learn and apply the programming language Python this year, because of its importance in the astronomy field. Every professional I have talked to or contacted as mentioned this programming language, and by beginning to learn it myself in highschool, I will able to create a good foundation for my collge years. After learning Python, I intend to complete a series of different projects on various topics related to astronomy, that is focoused on different applications and of various difficulty to show my understanding.</p>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+						<!-- Star -->
+						<!-- *write the readme descriptions for the repository (+link for where you got files)
+						     *do not upload fitz files!
+								 *initial pic to be some code + output, side by side [done!]
+								 *projects purpose (create an abstract, or mini para about ehat it does, what we did, what i learned) [done!]
+								 *picture of the code + link [done!]
+								 *description of code (functions) [done!]
+								 *mini pics of some specific code (if needed)
+								 *pic of final output [done!]
+							   *update links [done!] -->
+
+							<article id="star">
+								<h2 class="major">Star</h2>
+								<span class="image main"><img src="images/star_intro.png" alt="" /></span>
+								<p> <b>Abstract:</b> The purpose of this project was to classify stars using the inputted temperature and gravity.
+									For this project, I used <a href="https://archive.stsci.edu/hlsps/reference-atlases/cdbs/grid/k93models/">fitz files</a> from the <a href="https://archive.stsci.edu/">Mikulski Archive Website</a> and where the <a href="https://archive.stsci.edu/hlsps/reference-atlases/cdbs/grid/k93models/AA_README">readme</a> description defines each variable available and how to use it.
+									Through this project, I learned how to read in fits files, read user inputted values and use the these values to find and display information from a particular file. Using that file, I learned to plot the given information to create a graph of a star's Wavelength vs Gravity.
+									You can find the entire code for this star project, along with it's readme and output in my Github, <a href="https://github.com/neshini/ubiquitious-donovan/tree/main/star">here</a>.</p>
+								<h4>Snippet of code and functions used:</h4>
+								<span class="image main"><img src="images/star_code.png" alt="" /></span>
+								<p>This code uses the following functions throughout: <ul>
+									 <li>np.loadtext() - to read in files </li>
+									 <li>file_name.sort() - to sort the files
+								   <li>input() - to read the user's inputed value </li>
+								   <li>fits.getdata() - to get the data within a fitz fieldset </li>
+								   <li>if, else statements - to create conditions </li>
+								   <li>pl.figure() and plt.loglog() - to create a graph and plot the values </li>
+								   <li>plt.savefig() - to save the figure created </li> </ul></p>
+								<h3>Final Output</h3>
+								<span class="image main"><img src="images/star_output.png" alt="" /></span>
+							</article>
+
+					<!-- Luna -->
+					<!-- *write the readme descriptions for the repository (+link for where you got files)
+							 *initial pic (just the animation ) [done!]
+							 *projects purpose (create an abstract, or mini para about ehat it does, what we did, what i learned) [done!]
+							 *picture of the code + link [done]
+							 *description of code (functions)
+							 *individual image of phases [done!]
+							 *pic of final output [done!]
+							 *update links [done!] -->
+
+							<article id="luna">
+								<h2 class="major">Luna</h2>
+								<span class="image main"><img src="images/luna.gif" alt="" /></span>
+								<p> <b>Abstract:</b> The purpose of this project was to visually show the position of the moon around the earth and it's lunar phases.
+									For this project I used <a href="https://github.com/zingale/astro_animations">this</a> code as an initial referance to start my project.
+									Through this project, I learned how to draw and plot various shapes, add text to a plot, use cartopy and create subplots.
+									You can find the entire code for this luna project, along with it's readme and output in my Github, <a href="https://github.com/neshini/ubiquitious-donovan/tree/main/luna">here</a>.</p>
+								<h4>Snippet of code and functions used:</h4>
+								<span class="image main"><img src="images/luna_code.png" alt="" /></span>
+								<p>This code uses the following functions throughout: </p>
+									 <pre><code>plt.subplots() - to create a subplot
+np.linspace() - to create an evenly spaced sequence for the specified interval
+plt.axis() - to edit the plot's axis
+plt.Circle() - to create a circle with the specified parameters
+ax.text - to add text to the plot
+mpatches.Ellipse() and mpatches.Wedge() - to create an ellipse and wedge patch
+ax.add_patch() - to add a patch created
+ccrs.Orthographic() - to show the map of the earth in the shape of a circle
+art.add_feature() - to add a feature to the map created </code></pre>
+								<h3>Final Output</h3>
+								<span class="image main"><img src="images/luna_0.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_1.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_2.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_3.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_4.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_5.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_6.png" alt="" /></span>
+								<span class="image main"><img src="images/luna_7.png" alt="" /></span>
+								<p>And when all of this individual figures are put in order and turned into a gif, we get:</p>
+								<span class="image main"><img src="images/luna.gif" alt="" /></span>
+							</article>
+
+						<!-- Lulu -->
+						<!-- *write the readme descriptions for the repository (+link for where you got files)
+								 *initial pic of table printed out next to photo from https://zfourge.tamu.edu
+								 *projects purpose (create an abstract, or mini para about what it does, what we did, what i learned)
+								 *picture of the code + link
+								 *description of code (functions) + include more zfourge pics
+								 *para talking about zfourge
+								 *mini pics of some specific code (if needed)
+								 *pic of final output
+								 		sentence describing each of the plots
+							   *update links -->
+
+							<article id="lulu">
+								<h2 class="major">Lulu</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p> <b>Abstract:</b> The purpose of this project was to be able to read in, understand and organize large datasets into graphs that display the information from it clearly.
+									For this project, I used Zfourge to get three different datasets, CFS, COSMOS and AGN. Zfourge is a
+									Through this project, I learned how to use pandas to read in a dataset, create smaller tables from a large dataset and then plot a scatterplot using information from three different datasets.
+									You can find the entire code for this lulu project, along with it's readme and output in my Github, <a href="https://github.com/neshini/ubiquitious-donovan/tree/main/moti">here</a>.</p>
+								<h4>Snippet of code and functions used:</h4>
+								<span class="image main"><img src="lulu_code.png" alt="" /></span>
+								<p>This code uses the following functions throughout: <ul>
+									 <li>plt.subplots() - to create a subplot </li>
+								   <li>np.linspace() - to create an evenly spaced sequence for the specified interval </li>
+								   <li>plt.axis() - to edit the plot's axis </li>
+									 <li>plt.Circle() - to create a circle with the specified parameters </li>
+								   <li>ax.text - to add text to the plot </li>
+								   <li>mpatches.Ellipse() and mpatches.Wedge() - to create an ellipse and wedge patch </li>
+								   <li>ax.add_patch() - to add a patch created </li>
+									 <li>ccrs.Orthographic() - to show the map of the earth in the shape of a circle </li>
+									 <li>art.add_feature() - to add a feature to the map created </li></ul></p>
+								<h3>Final Output</h3>
+								<span class="image main"><img src="images/lulu_output_0.png" alt="" /></span>
+								<span class="image main"><img src="images/lulu_output_1.png" alt="" /></span>
+								<span class="image main"><img src="images/lulu_output_2.png" alt="" /></span>
+								<span class="image main"><img src="images/lulu_output_3.png" alt="" /></span>
+								</article>
+
+						<!-- Moti -->
+						<!-- *write the readme descriptions for the repository (+link for where you got files)
+								 * initial pic of animation [done!]
+								 *projects purpose (create an abstract, or mini para about what it does, what we did, what i learned) [done!]
+								 *picture of the code [done!]
+								 *description of code (functions) + individual examples [done!]
+								 * individual pics of plots +any other [done!]
+								 		sentence describing each of the plots
+								 *pic of final output [done!]
+							   *update links [done!] -->
+							<article id="moti">
+								<h2 class="major">Moti</h2>
+								<span class="image main"><img src="images/throws.gif" alt="" /></span>
+								<p> <b>Abstract:</b> The purpose of this project was to calculate the gravity of a celestial object, given its mass and radius, then to plot the projectile motion of a ball being thrown on that celestial object at the specified parameters.
+									For this project, I used basic physics to find the gravity and calulate its motion.
+									Through this project, I learned how to apply physics principles to calulate the gravity and projecile motion through code. Then I learned how to plot the projectile motion of a ball being thrown at the specified parameters. And lastly, I learned how to create a library and animate a plot.
+									You can find the entire code for this moti project, along with it's readme and output in my Github, <a href="https://github.com/neshini/ubiquitious-donovan/tree/main/moti">here</a>.</p>
+								<h4>Snippet of code and functions used:</h4>
+								<span class="image main"><img src="images/moti_code.png" alt="" /></span>
+								<p>This code uses the following functions throughout: <ul>
+									 <li>plt.subplots() - to create a subplot </li>
+								   <li>np.linspace() - to create an evenly spaced sequence for the specified interval </li>
+								   <li>plt.axis() - to edit the plot's axis </li>
+									 <li>plt.Circle() - to create a circle with the specified parameters </li>
+								   <li>ax.text - to add text to the plot </li>
+								   <li>mpatches.Ellipse() and mpatches.Wedge() - to create an ellipse and wedge patch </li>
+								   <li>ax.add_patch() - to add a patch created </li>
+									 <li>ccrs.Orthographic() - to show the map of the earth in the shape of a circle </li>
+									 <li>art.add_feature() - to add a feature to the map created </li></ul></p>
+								<h3>Final Output</h3>
+								<span class="image main"><img src="images/moti_output_1.png" alt="" /></span>
+								<span class="image main"><img src="images/moti_output_2.png" alt="" /></span>
+								<span class="image main"><img src="images/moti_output_3.png" alt="" /></span>
+								<span class="image main"><img src="images/throws.gif" alt="" /></span>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p> My name is Neshini Sathishkumar and I am currently a junior in Heritage High School aspiring to be an astronomer. By joining a course in Frisco ISD, known as Independent Study and Mentorship(ISM), I have been able to contact other professioniols in this field, conduct research and overall solidify my goal to be an astronomer. You can read and learn more about the ISM course <a href="https://www.friscoisd.org/departments/independent-study-mentorship/home">here</a>. If you want to learn more about me and my research visit this <a href="https://neshinisathishkuma3.wixsite.com/mysite">website</a>.</p>
-								<! -- For this year, I have had the honor of having Ms.Taylor Hutchinson as my mentor. Through her guidance I was able to create this website, learn about python and apply it through various projects. Learn more about Ms.Hutchinson -->
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<p> My name is Neshini Sathishkumar and I am currently a junior in Heritage High School aspiring to be an astronomer. By joining a course in Frisco ISD, known as Independent Study and Mentorship (ISM), I have been able to contact other professionals in this field, conduct research and overall solidify my goal to be an astronomer. You can read and learn more about the ISM course <a href="https://www.friscoisd.org/departments/independent-study-mentorship/home">here</a>. And if you want to learn more about me and my research visit this <a href="https://neshinisathishkuma3.wixsite.com/mysite">website</a>.</p>
+								<p> This year, I have had the honor of having Ms.Taylor Hutchison as my mentor. Through her guidance I was able to create this website, learn how to create and use a github account, and finally learn about python and apply it into these four different projects. </p>
 							</article>
 
 						<!-- Elements -->
